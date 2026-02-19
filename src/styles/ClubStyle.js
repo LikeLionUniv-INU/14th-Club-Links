@@ -10,14 +10,14 @@ export const MobileContainer = styled.div`
   max-width: 480px;
   margin: 0 auto;
   min-height: 100vh;
-  background: #f9fafb; 
+  background: #f9fafb;
 `;
 
 export const TopBar = styled.div`
   position: sticky;
   top: 0;
   background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px); 
+  backdrop-filter: blur(20px);
   padding: 16px 20px;
   z-index: 100;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
@@ -34,18 +34,17 @@ export const TopBar = styled.div`
 `;
 
 export const LogoImage = styled.img`
-  width: 28px;
-  height: 28px;
-  margin-right: 10px;
+  width: 40px;
+  height: auto;
+  margin-right: 6px;
   border-radius: 6px;
-  object-fit: cover;
 `;
 
 export const InfoBox = styled.div`
   background: #fff;
   margin: 20px 16px;
   padding: 24px;
-  border-radius: 24px; 
+  border-radius: 24px;
   border: 1px solid rgba(0, 0, 0, 0.04);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
   animation: ${fadeIn} 0.5s ease-out;
@@ -94,12 +93,25 @@ export const BadgeRow = styled.div`
 `;
 
 export const StatusBadge = styled.span`
-  background: ${(props) => (props.isField ? "#f2f4f6" : "#fff0f0")};
-  color: ${(props) => (props.isField ? "#4e5968" : "#c62917")};
   font-size: 11px;
   font-weight: 700;
   padding: 5px 10px;
   border-radius: 8px;
+
+  /* 상태별 색상 분기 */
+  ${(props) => {
+    if (props.isField) return `background: #f2f4f6; color: #4e5968;`; // 카테고리 배지
+    switch (props.type) {
+      case "always":
+        return `background: #e8f3ff; color: #1b64da;`; // 상시모집 (파랑)
+      case "today":
+        return `background: #fff0f0; color: #c62917;`; // 오늘마감 (빨강)
+      case "closed":
+        return `background: #e5e8eb; color: #8b95a1;`; // 마감 (회색)
+      default:
+        return `background: #e8f3ff; color: #1b64da;`; // 모집중 (파랑)
+    }
+  }}
 `;
 
 export const Title = styled.h2`
@@ -118,18 +130,21 @@ export const SubText = styled.p`
 
 export const ActionButton = styled.a`
   display: block;
-  background: #191f28;
-  color: white;
-  text-decoration: none;
   text-align: center;
   padding: 16px;
   border-radius: 16px;
   font-size: 15px;
   font-weight: 700;
-  transition: background 0.2s;
+  text-decoration: none;
+  transition: all 0.2s;
 
-  &:hover {
-    background: #333d4b;
+  background: ${(props) => (props.isClosed ? "#f2f4f6" : "#191f28")};
+  color: ${(props) => (props.isClosed ? "#adb5bd" : "white")};
+  cursor: ${(props) => (props.isClosed ? "default" : "pointer")};
+  pointer-events: ${(props) => (props.isClosed ? "none" : "auto")};
+
+  &:active {
+    transform: ${(props) => (props.isClosed ? "none" : "scale(0.98)")};
   }
 `;
 
@@ -169,4 +184,34 @@ export const ListWrapper = styled.div`
   padding: 0 16px;
   display: flex;
   flex-direction: column;
+`;
+
+// 카테고리 관련
+export const CategoryContainer = styled.div`
+  display: flex;
+  gap: 8px;
+  padding: 0 16px 20px 16px;
+  overflow-x: auto;
+  white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const CategoryButton = styled.button`
+  padding: 10px 16px;
+  border-radius: 20px;
+  border: 1px solid ${(props) => (props.active ? "#191f28" : "#e5e8eb")};
+  background: ${(props) => (props.active ? "#191f28" : "white")};
+  color: ${(props) => (props.active ? "white" : "#4e5968")};
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+
+  &:active {
+    transform: scale(0.95);
+  }
 `;
