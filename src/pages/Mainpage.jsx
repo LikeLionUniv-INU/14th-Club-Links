@@ -24,7 +24,8 @@ const getStatus = (deadline) => {
   const diffTime = target - today;
   const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
 
-  if (diffDays > 0) return { text: `D-${diffDays}`, type: "recruiting" };
+  if (diffDays > 0)
+    return { text: `마감까지 D-${diffDays}`, type: "recruiting" };
   if (diffDays === 0) return { text: "오늘 마감", type: "today" };
   return { text: "모집 마감", type: "closed" };
 };
@@ -33,7 +34,7 @@ const CLUB_DATA = [
   {
     id: 1,
     name: "멋쟁이사자처럼",
-    desc: "인천대 중앙 IT 동아리 (이거 저희가 만들었어요 🥹)",
+    desc: "인천대 중앙 IT 동아리 (이 사이트 저희가 만들었어요 🥹)",
     category: "교양학술",
     deadline: "2026-03-06",
     link: "https://everytime.kr/418891/v/400593967",
@@ -57,7 +58,7 @@ const CLUB_DATA = [
   {
     id: 4,
     name: "로타랙트",
-    desc: "인천대 중앙 연합 봉사 동아리",
+    desc: "인천대 중앙 봉사 동아리",
     category: "봉사",
     deadline: "2026-03-19",
     link: "https://everytime.kr/418891/v/400740161",
@@ -68,7 +69,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 마케팅 동아리",
     category: "교양학술",
     deadline: "2026-03-06",
-    link: "https://everytime.kr/418891/v/400697083",
+    link: "https://everytime.kr/418891/v/400993493",
   },
   {
     id: 6,
@@ -100,7 +101,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 투자 동아리",
     category: "교양학술",
     deadline: "2026-03-01",
-    link: "https://everytime.kr/418891/v/400373448",
+    link: "https://everytime.kr/418891/v/400865194",
   },
   {
     id: 10,
@@ -132,7 +133,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 영화 동아리",
     category: "문화",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/400215705",
+    link: "https://everytime.kr/418891/v/400925124",
   },
   {
     id: 14,
@@ -140,7 +141,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 강연기획 동아리",
     category: "교양학술",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/400689045",
+    link: "https://everytime.kr/418891/v/400996944",
   },
   {
     id: 15,
@@ -156,7 +157,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 DIY 동아리",
     category: "취미전시",
     deadline: "2026-03-06",
-    link: "https://everytime.kr/418891/v/400596005",
+    link: "https://everytime.kr/418891/v/400971710",
   },
   {
     id: 17,
@@ -164,7 +165,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 클래식기타 동아리",
     category: "문화",
     deadline: "2026-03-05",
-    link: "https://everytime.kr/418891/v/400540892",
+    link: "https://everytime.kr/418891/v/400864780",
   },
   {
     id: 18,
@@ -172,7 +173,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 보드 동아리",
     category: "체육",
     deadline: "2026-03-13",
-    link: "https://everytime.kr/418891/v/400480501",
+    link: "https://everytime.kr/418891/v/400886487",
   },
   {
     id: 19,
@@ -196,7 +197,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 볼링 동아리",
     category: "체육",
     deadline: "always",
-    link: "https://everytime.kr/418891/v/400181603",
+    link: "https://everytime.kr/418891/v/400978300",
   },
   {
     id: 22,
@@ -229,6 +230,30 @@ const CLUB_DATA = [
     category: "체육",
     deadline: "always",
     link: "https://everytime.kr/418891/v/398714757",
+  },
+  {
+    id: 26,
+    name: "COOKINU",
+    desc: "인천대 중앙 요리 동아리",
+    category: "취미전시",
+    deadline: "always",
+    link: "https://everytime.kr/418891/v/400989367",
+  },
+  {
+    id: 27,
+    name: "인풋아웃풋",
+    desc: "인천대 중앙 풋살 동아리",
+    category: "체육",
+    deadline: "2026-03-06",
+    link: "https://everytime.kr/418891/v/400991916",
+  },
+  {
+    id: 28,
+    name: "유스호스텔",
+    desc: "인천대 중앙 여행 동아리",
+    category: "취미전시",
+    deadline: "2026-03-04",
+    link: "https://everytime.kr/418891/v/400993643",
   },
 ];
 
@@ -268,7 +293,7 @@ function MainPage() {
             이용해주세요!
             <br />
             <strong style={{ color: "red" }}>
-              * 26.02.19 기준 25/48개 등록됨
+              * 26.02.20 기준 28/48개 등록됨
             </strong>
           </div>
         </S.InfoItem>
