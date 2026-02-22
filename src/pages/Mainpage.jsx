@@ -325,7 +325,7 @@ function MainPage() {
             이용해주세요!
             <br />
             <strong style={{ color: "red" }}>
-              * 26.02.20 기준 32/48개 등록됨
+              * 26.02.21 기준 32/48개 등록됨
             </strong>
           </div>
         </S.InfoItem>
