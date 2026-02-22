@@ -61,7 +61,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 봉사 동아리",
     category: "봉사",
     deadline: "2026-03-19",
-    link: "https://everytime.kr/418891/v/400740161",
+    link: "https://everytime.kr/418891/v/401128281",
   },
   {
     id: 5,
@@ -77,7 +77,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 시사토론 동아리",
     category: "교양학술",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/400600629",
+    link: "https://everytime.kr/418891/v/401124974",
   },
   {
     id: 7,
@@ -133,7 +133,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 영화 동아리",
     category: "문화",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/400925124",
+    link: "https://everytime.kr/418891/v/401128533",
   },
   {
     id: 14,
@@ -141,7 +141,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 강연기획 동아리",
     category: "교양학술",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/400996944",
+    link: "https://everytime.kr/418891/v/401137534",
   },
   {
     id: 15,
@@ -165,7 +165,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 클래식기타 동아리",
     category: "문화",
     deadline: "2026-03-05",
-    link: "https://everytime.kr/418891/v/400864780",
+    link: "https://everytime.kr/418891/v/401013256",
   },
   {
     id: 18,
@@ -213,7 +213,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 스쿼시 동아리",
     category: "체육",
     deadline: "always",
-    link: "https://everytime.kr/418891/v/399867555",
+    link: "https://everytime.kr/418891/v/401135346",
   },
   {
     id: 24,
@@ -229,7 +229,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 야구 동아리",
     category: "체육",
     deadline: "always",
-    link: "https://everytime.kr/418891/v/398714757",
+    link: "https://everytime.kr/418891/v/401010142",
   },
   {
     id: 26,
@@ -254,6 +254,38 @@ const CLUB_DATA = [
     category: "취미전시",
     deadline: "2026-03-04",
     link: "https://everytime.kr/418891/v/400993643",
+  },
+  {
+    id: 29,
+    name: "포크라인",
+    desc: "인천대 중앙 밴드 동아리",
+    category: "문화",
+    deadline: "2026-03-08",
+    link: "https://everytime.kr/418891/v/401133904",
+  },
+  {
+    id: 30,
+    name: "파이오니아",
+    desc: "인천대 중앙 밴드 동아리",
+    category: "문화",
+    deadline: "2026-03-06",
+    link: "https://everytime.kr/418891/v/401111091",
+  },
+  {
+    id: 31,
+    name: "JDM",
+    desc: "인천대 중앙 기독교 동아리",
+    category: "종교",
+    deadline: "always",
+    link: "https://everytime.kr/418891/v/401074112",
+  },
+  {
+    id: 32,
+    name: "돌핀",
+    desc: "인천대 중앙 농구 동아리",
+    category: "체육",
+    deadline: "2026-03-06",
+    link: "https://everytime.kr/418891/v/401020081",
   },
 ];
 
@@ -293,7 +325,7 @@ function MainPage() {
             이용해주세요!
             <br />
             <strong style={{ color: "red" }}>
-              * 26.02.20 기준 28/48개 등록됨
+              * 26.02.20 기준 32/48개 등록됨
             </strong>
           </div>
         </S.InfoItem>
@@ -301,7 +333,7 @@ function MainPage() {
         <S.InfoItem>
           <div>🔗</div>
           <div>
-            전체 중앙동아리 목록은 {""}
+            아직 재학생 인증을 못 받으셨다면, 전체 중앙동아리 목록이 있는 {""}
             <S.InstaLink
               href="https://www.instagram.com/inu_yiyeon/"
               target="_blank"
