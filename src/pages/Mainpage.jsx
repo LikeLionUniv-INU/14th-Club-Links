@@ -53,7 +53,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 독서토론 동아리",
     category: "교양학술",
     deadline: "2026-02-25",
-    link: "https://everytime.kr/418891/v/400753903",
+    link: "https://everytime.kr/418891/v/401293797",
   },
   {
     id: 4,
@@ -125,7 +125,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 탁구 동아리",
     category: "체육",
     deadline: "always",
-    link: "https://everytime.kr/418891/v/399560337",
+    link: "https://everytime.kr/418891/v/401200483",
   },
   {
     id: 13,
@@ -165,7 +165,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 클래식기타 동아리",
     category: "문화",
     deadline: "2026-03-05",
-    link: "https://everytime.kr/418891/v/401013256",
+    link: "https://everytime.kr/418891/v/401218375",
   },
   {
     id: 18,
@@ -277,7 +277,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 기독교 동아리",
     category: "종교",
     deadline: "always",
-    link: "https://everytime.kr/418891/v/401074112",
+    link: "https://everytime.kr/418891/v/401296142",
   },
   {
     id: 32,
@@ -286,6 +286,14 @@ const CLUB_DATA = [
     category: "체육",
     deadline: "2026-03-06",
     link: "https://everytime.kr/418891/v/401020081",
+  },
+  {
+    id: 33,
+    name: "인스디스",
+    desc: "인천대 중앙 흑인음악 동아리",
+    category: "문화",
+    deadline: "2026-03-06",
+    link: "https://everytime.kr/418891/v/401226551",
   },
 ];
 
@@ -325,7 +333,7 @@ function MainPage() {
             이용해주세요!
             <br />
             <strong style={{ color: "red" }}>
-              * 26.02.21 기준 32/48개 등록됨
+              * 26.02.23 기준 33/48개 등록됨
             </strong>
           </div>
         </S.InfoItem>
