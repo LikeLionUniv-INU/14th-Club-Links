@@ -53,7 +53,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 독서토론 동아리",
     category: "교양학술",
     deadline: "2026-02-25",
-    link: "https://everytime.kr/418891/v/401293797",
+    link: "https://everytime.kr/418891/v/401674490",
   },
   {
     id: 4,
@@ -69,7 +69,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 마케팅 동아리",
     category: "교양학술",
     deadline: "2026-03-06",
-    link: "https://everytime.kr/418891/v/400993493",
+    link: "https://everytime.kr/418891/v/401352015",
   },
   {
     id: 6,
@@ -77,7 +77,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 시사토론 동아리",
     category: "교양학술",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/401124974",
+    link: "https://everytime.kr/418891/v/401524093",
   },
   {
     id: 7,
@@ -101,7 +101,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 투자 동아리",
     category: "교양학술",
     deadline: "2026-03-01",
-    link: "https://everytime.kr/418891/v/400865194",
+    link: "https://everytime.kr/418891/v/401310033",
   },
   {
     id: 10,
@@ -133,7 +133,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 영화 동아리",
     category: "문화",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/401128533",
+    link: "https://everytime.kr/418891/v/401671963",
   },
   {
     id: 14,
@@ -141,7 +141,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 강연기획 동아리",
     category: "교양학술",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/401137534",
+    link: "https://everytime.kr/418891/v/401699113",
   },
   {
     id: 15,
@@ -157,7 +157,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 DIY 동아리",
     category: "취미전시",
     deadline: "2026-03-06",
-    link: "https://everytime.kr/418891/v/400971710",
+    link: "https://everytime.kr/418891/v/401485865",
   },
   {
     id: 17,
@@ -165,7 +165,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 클래식기타 동아리",
     category: "문화",
     deadline: "2026-03-05",
-    link: "https://everytime.kr/418891/v/401218375",
+    link: "https://everytime.kr/418891/v/401534963",
   },
   {
     id: 18,
@@ -173,7 +173,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 보드 동아리",
     category: "체육",
     deadline: "2026-03-13",
-    link: "https://everytime.kr/418891/v/400886487",
+    link: "https://everytime.kr/418891/v/401321929",
   },
   {
     id: 19,
@@ -189,7 +189,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 유기견봉사 동아리",
     category: "봉사",
     deadline: "2026-02-27",
-    link: "https://everytime.kr/418891/v/400395339",
+    link: "https://everytime.kr/418891/v/401342395",
   },
   {
     id: 21,
@@ -221,7 +221,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 기독교 동아리",
     category: "종교",
     deadline: "always",
-    link: "https://everytime.kr/418891/v/398791768",
+    link: "https://everytime.kr/418891/v/401556940",
   },
   {
     id: 25,
@@ -253,7 +253,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 여행 동아리",
     category: "취미전시",
     deadline: "2026-03-04",
-    link: "https://everytime.kr/418891/v/400993643",
+    link: "https://everytime.kr/418891/v/401688450",
   },
   {
     id: 29,
@@ -295,6 +295,46 @@ const CLUB_DATA = [
     deadline: "2026-03-06",
     link: "https://everytime.kr/418891/v/401226551",
   },
+  {
+    id: 34,
+    name: "인영천화",
+    desc: "인천대 중앙 영화감상 동아리",
+    category: "취미전시",
+    deadline: "2026-03-08",
+    link: "https://everytime.kr/418891/v/401547417",
+  },
+  {
+    id: 35,
+    name: "인인극회",
+    desc: "인천대 중앙 연극 동아리",
+    category: "문화",
+    deadline: "always",
+    link: "https://everytime.kr/418891/v/401543138",
+  },
+  {
+    id: 36,
+    name: "함성",
+    desc: "인천대 중앙 밴드 동아리",
+    category: "문화",
+    deadline: "2026-03-12",
+    link: "https://everytime.kr/418891/v/401517385",
+  },
+  {
+    id: 37,
+    name: "INUO",
+    desc: "인천대 중앙 오케스트라 동아리",
+    category: "문화",
+    deadline: "2026-03-16",
+    link: "https://everytime.kr/418891/v/401339379",
+  },
+  {
+    id: 38,
+    name: "하양검정",
+    desc: "인천대 중앙 사진 동아리",
+    category: "취미전시",
+    deadline: "2026-03-09",
+    link: "https://everytime.kr/418891/v/401318635",
+  },
 ];
 
 function MainPage() {
@@ -333,7 +373,7 @@ function MainPage() {
             이용해주세요!
             <br />
             <strong style={{ color: "red" }}>
-              * 26.02.23 기준 33/48개 등록됨
+              * 26.02.25 기준 38/48개 등록됨
             </strong>
           </div>
         </S.InfoItem>
