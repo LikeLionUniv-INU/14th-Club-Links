@@ -37,7 +37,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 IT 동아리 (이 사이트 저희가 만들었어요 🥹)",
     category: "교양학술",
     deadline: "2026-03-06",
-    link: "https://everytime.kr/418891/v/400593967",
+    link: "https://everytime.kr/418891/v/402022384",
   },
   {
     id: 2,
@@ -45,7 +45,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 보드 동아리",
     category: "체육",
     deadline: "2026-03-13",
-    link: "https://everytime.kr/418891/v/401321929",
+    link: "https://everytime.kr/418891/v/401908264",
   },
   {
     id: 3,
@@ -117,7 +117,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 유기견봉사 동아리",
     category: "봉사",
     deadline: "2026-02-27",
-    link: "https://everytime.kr/418891/v/401342395",
+    link: "https://everytime.kr/418891/v/401890713",
   },
   {
     id: 12,
@@ -141,7 +141,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 봉사 동아리",
     category: "봉사",
     deadline: "2026-03-19",
-    link: "https://everytime.kr/418891/v/401128281",
+    link: "https://everytime.kr/418891/v/401935178",
   },
   {
     id: 15,
@@ -173,7 +173,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 시사토론 동아리",
     category: "교양학술",
     deadline: "2026-02-28",
-    link: "https://everytime.kr/418891/v/401524093",
+    link: "https://everytime.kr/418891/v/401907641",
   },
   {
     id: 19,
@@ -229,7 +229,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 영화감상 동아리",
     category: "취미전시",
     deadline: "2026-03-08",
-    link: "https://everytime.kr/418891/v/401547417",
+    link: "https://everytime.kr/418891/v/401956089",
   },
   {
     id: 26,
@@ -237,7 +237,7 @@ const CLUB_DATA = [
     desc: "인천대 중앙 DIY 동아리",
     category: "취미전시",
     deadline: "2026-03-06",
-    link: "https://everytime.kr/418891/v/401485865",
+    link: "https://everytime.kr/418891/v/402014176",
   },
   {
     id: 27,
@@ -305,14 +305,22 @@ const CLUB_DATA = [
   },
   {
     id: 35,
-    name: "하늬울림",
-    desc: "인천대 중앙 클래식기타 동아리",
-    category: "문화",
-    deadline: "2026-03-05",
-    link: "https://everytime.kr/418891/v/401534963",
+    name: "페더스",
+    desc: "인천대 중앙 배드민턴 동아리",
+    category: "체육",
+    deadline: "2026-03-06",
+    link: "https://everytime.kr/418891/v/402007410",
   },
   {
     id: 36,
+    name: "하늬울림",
+    desc: "인천대 중앙 클래식기타 동아리",
+    category: "문화",
+    deadline: "2026-03-06",
+    link: "https://everytime.kr/418891/v/401930680",
+  },
+  {
+    id: 37,
     name: "하양검정",
     desc: "인천대 중앙 사진 동아리",
     category: "취미전시",
@@ -320,7 +328,7 @@ const CLUB_DATA = [
     link: "https://everytime.kr/418891/v/401318635",
   },
   {
-    id: 37,
+    id: 38,
     name: "한아랑",
     desc: "인천대 중앙 만화 동아리",
     category: "취미전시",
@@ -328,7 +336,7 @@ const CLUB_DATA = [
     link: "https://everytime.kr/418891/v/400036275",
   },
   {
-    id: 38,
+    id: 39,
     name: "함성",
     desc: "인천대 중앙 밴드 동아리",
     category: "문화",
@@ -336,7 +344,7 @@ const CLUB_DATA = [
     link: "https://everytime.kr/418891/v/401517385",
   },
   {
-    id: 39,
+    id: 40,
     name: "효월검우회",
     desc: "인천대 중앙 검도 동아리",
     category: "체육",
